@@ -1,0 +1,77 @@
+.container tr td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+.container .table-container {
+    padding: 20px;
+}
+
+.container  table {
+    margin-top: 20px;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.container thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.container tbody td {
+    padding: 10px;
+}
+
+.container button {
+    padding: 8px 14px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #555;
+}
+
+.container .inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .add-inputs {
+    margin-right: 20%;
+}
+.container .search-inputs {
+    margin-left: 10%;
+}
+
+.container h1{
+    text-align: center;
+    margin-right: 450px;
+}
+
+.container .footy {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 20%;
+    padding-top: 2%;
+}
+
+.container .editable-title {
+    font-size: 38px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-left: 12px;
+
+  }

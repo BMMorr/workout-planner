@@ -29,10 +29,10 @@ function Nav() {
             </Link>
 
             <Link className="navLink" to="/info">
-              Info Page
+              Create
             </Link>
             <Link className="navLink" to="/workdata">
-              workout data
+              Data
             </Link>
 
             <LogOutButton className="navLink" />

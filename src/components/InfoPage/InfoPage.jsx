@@ -106,11 +106,6 @@ function InfoPage() {
       </table>
       <div className='footy'>
         <div>
-          {wger.map((exercise) => (
-            <div key={exercise.id}>
-              <p>{exercise.name}</p>
-            </div>
-          ))}
         </div>
         <div className='create-btn' >
           <button onClick={addWorkout}>Create Workout</button>

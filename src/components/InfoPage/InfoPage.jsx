@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import './InfoPage.css'
 
 function InfoPage() {
@@ -10,6 +11,7 @@ function InfoPage() {
   const [query, setQuery] = useState('');
   const [exercise, setExercise] = useState('');
   const [workout, setWorkout] = useState('');
+  const history = useHistory();
 
   useEffect(() => {
     dispatch({ type: 'GET_EXERCISE' });
@@ -19,7 +21,7 @@ function InfoPage() {
     dispatch(search(query));
   };
 
-  function addWorkout(event) {
+  const addWorkout = (event) => {
     event.preventDefault();
     dispatch({
       type: 'ADD_WORKOUT',
@@ -27,7 +29,8 @@ function InfoPage() {
         exercise_name: tableData,
         workout_name: workout
       }
-    })
+    });
+    history.push(`/user`);
   }
 
   const insertExercise = () => {
@@ -93,7 +96,9 @@ function InfoPage() {
             <tr key={index}>
               <td>
                 {exercise}
-                <button>Delete</button>
+                <button onClick={() => dispatch({ type: 'DELETE_EXERCISE', payload: index })}>
+                  Delete
+                </button>
               </td>
             </tr>
           ))}

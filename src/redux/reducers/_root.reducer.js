@@ -5,6 +5,8 @@ import wger from './wger.reducer';
 import workdataReducer from './workdata.reducer';
 import workTableReducer from './worktable.reducer';
 import homeTableReducer from './hometable.reducer';
+import startReducer from './start.reducer';
+import workoutReducer from './workout.reducer';
 
 // rootReducer is the primary reducer for our entire project
 // It bundles up all of the other reducers so our project can use them.
@@ -19,6 +21,8 @@ const rootReducer = combineReducers({
   workdataReducer,
   workTableReducer,
   homeTableReducer,
+  startReducer,
+  workoutReducer,
 });
 
 export default rootReducer;

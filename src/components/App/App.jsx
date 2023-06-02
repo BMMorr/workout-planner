@@ -21,6 +21,7 @@ import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
 import WorkData from '../WorkData/WorkData';
 import WorkoutPage from '../WorkoutPage/WorkoutPage';
+import EditPage from '../EditPage/EditPage';
 
 import './App.css';
 
@@ -75,6 +76,13 @@ function App() {
             path="/start/:id"
           >
             <WorkoutPage />
+          </ProtectedRoute>
+          <ProtectedRoute
+            // logged in shows InfoPage else shows LoginPage
+            exact
+            path="/edit/:id"
+          >
+            <EditPage />
           </ProtectedRoute>
           <ProtectedRoute
             // logged in shows InfoPage else shows LoginPage

@@ -11,6 +11,7 @@
 
 .container  table {
     margin-top: 20px;
+    font-size: 34px;
     width: 80%;
     border-collapse: collapse;
     background-color: #f8f8f8;
@@ -44,10 +45,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
+.larger-textbox {
+    font-size: 16px;
+    padding: 5px;
+    
+  }
+  
 
 .container .add-inputs {
-    margin-right: 20%;
+    margin-right: 10%;
 }
 .container .search-inputs {
     margin-left: 10%;
@@ -62,16 +70,16 @@
     display: flex;
     justify-content: space-between;
     padding-left: 10%;
-    padding-right: 20%;
+    padding-right: 10%;
     padding-top: 2%;
 }
 
 .container .editable-title {
-    font-size: 38px;
+    font-size: 50px;
     font-weight: bold;
     border: none;
     background-color: transparent;
     outline: none;
-    margin-left: 12px;
+    margin-left: -1150px;
 
   }

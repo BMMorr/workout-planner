@@ -30,6 +30,7 @@ function InfoPage() {
         workout_name: workout
       }
     });
+    dispatch({ type: 'CLEAR_TABLE_DATA' });
     history.push(`/user`);
   }
 
@@ -49,7 +50,7 @@ function InfoPage() {
       <h1>Create Workout</h1>
       <div className='inputs'>
         <div className='search-inputs'>
-          <input
+          {/* <input
             type='text'
             value={query}
             placeholder="Search..."
@@ -64,7 +65,7 @@ function InfoPage() {
             <option value="arms">Arms</option>
             <option value="Abs">Abs</option>
           </select>
-          <button onClick={handleSearch}>Search</button>
+          <button onClick={handleSearch}>Search</button> */}
         </div>
         <div>
           <input
@@ -81,6 +82,7 @@ function InfoPage() {
             value={exercise}
             placeholder="Exercise Name"
             onChange={(e) => setExercise(e.target.value)}
+            className="larger-textbox"
           />
           <button onClick={insertExercise}>Add Exercise</button>
         </div>
@@ -96,7 +98,7 @@ function InfoPage() {
             <tr key={index}>
               <td>
                 {exercise}
-                <button onClick={() => dispatch({ type: 'DELETE_EXERCISE', payload: index })}>
+                <button onClick={() => dispatch({ type: 'DELETE_EXERCISE_TABLE', payload: index })}>
                   Delete
                 </button>
               </td>

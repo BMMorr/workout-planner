@@ -1,8 +1,8 @@
 .work-title {
-    margin-left: 5%;
+    margin-left: 16%;
     margin-right: 5%;
     margin-top: 0px;
-}
+    font-size: 64px;}
 
 .workout-table {
     margin-left: 5%;
@@ -75,3 +75,27 @@
 .createbtn:hover {
     background-color: darkmagenta;
 }
+  
+  .welcome-section {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+  
+  .logout-button {
+    margin-left: 10px;
+    margin-top: 4px;
+    font-size: 14px !important;
+    height: 40px;
+    background-color: rgb(123, 88, 157) !important;
+    border-radius: 4px !important;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: darkorchid;
+  }
+  
+  h2 {
+    margin: 0;
+  }

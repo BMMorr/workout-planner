@@ -9,10 +9,15 @@ function Nav() {
 
   return (
     <div className="nav">
+      <div className='flex-start'>
+      <img src={process.env.PUBLIC_URL + '/images/wplogo.jpeg'}
+        alt="wp-logo"
+        className='nav-logo' />
       <Link to="/home">
         <h2 className="nav-title">Workout Planner</h2>
       </Link>
-      <div>
+      </div>
+      <div className='flex-end'>
         {/* If no user is logged in, show these links */}
         {!user.id && (
           // If there's no user, show login/registration links

@@ -5,6 +5,7 @@ import './UserPage.css';
 import TableList from './TableList';
 import { useHistory } from 'react-router-dom';
 
+
 function UserPage() {
   const user = useSelector((store) => store.user);
   const history = useHistory();
@@ -14,13 +15,15 @@ function UserPage() {
   };
   return (
     <div className="container">
-      <h2>Welcome, {user.username}!</h2>
-      <p>Your ID is: {user.id}</p>
-      <LogOutButton className="btn" />
-      <div className='buttonbox'>
-        <button onClick={plannerPage} className="createbtn">Create</button>
+      <div className="welcome-section">
+        <h2>Welcome, {user.username}!</h2>
+        <LogOutButton className="logout-button" />
       </div>
-
+      <div className="buttonbox">
+        <button onClick={plannerPage} className="createbtn">
+          Create
+        </button>
+      </div>
 
       <h1 className="work-title">Workouts</h1>
       <TableList />

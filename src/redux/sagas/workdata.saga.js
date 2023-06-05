@@ -83,7 +83,6 @@ const addEditExerciseAPI = async (insertData) => {
     const response = await axios.post('/api/workdata/exercise', insertData);
     return response.data;
 }
-
 function* addEditExercise(action) {
     try {
         const insertData = action.payload;
@@ -94,7 +93,6 @@ function* addEditExercise(action) {
         console.log('post /api/workdata/exercise error', error);
     }
 }
-
 const deleteEditExerciseAPI = async exerciseID => {
     const response = await axios.delete(`/api/workdata/edit/${exerciseID}`);
     return response.data;
@@ -112,7 +110,6 @@ function* deleteEditExercise(action) {
         console.log('Error deleting exercise:', error);
     }
 }
-
 const updateWorkoutNameAPI = async (updateData) => {
     const response = await axios.put('/api/workdata/update', updateData);
     return response.data;
@@ -129,7 +126,6 @@ function* updateWorkoutName(action) {
         console.log('update error /api/workdata/update:', error);
     }
 }
-
 function* workdataSaga() {
     yield takeEvery('ADD_WORKOUT', postWorkout);
     yield takeEvery('GET_WORKDATA', getWorkData);

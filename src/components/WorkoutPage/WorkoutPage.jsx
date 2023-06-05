@@ -64,7 +64,7 @@ function WorkoutPage() {
             <LogOutButton className="btn" />
             {startReducer.map((data, index) => (
                 <div className="workout-table" key={`${data.user_id}-${index}`}>
-                    {/* this makes the error go away /\/\/\*/}
+                    {/* this makes the error go away ^  */}
                     <div className="graybox">
                         <div className="purplebox">
                             <p>{data.exercise_name}</p>

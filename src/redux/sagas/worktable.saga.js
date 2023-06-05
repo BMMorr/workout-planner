@@ -11,7 +11,7 @@ function* deleteFromTable(action) {
 
 function* workTableSaga() {
   yield takeLatest('ADD_TO_TABLE', addToTable);
-  yield takeLatest('DELETE_EXERCISE', deleteFromTable);
+  yield takeLatest('DELETE_EXERCISE_TABLE', deleteFromTable);
 
 }
 
